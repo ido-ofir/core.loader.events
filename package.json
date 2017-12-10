@@ -1,0 +1,11 @@
+{
+    "name": "core.loader.events",
+    "version": "0.0.1",
+    "description": "enables plugins to emit events",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "ido-ofir",
+    "license": "ISC"
+}
