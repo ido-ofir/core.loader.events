@@ -1,6 +1,6 @@
 {
     "name": "core.loader.events",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "enables plugins to emit events",
     "main": "index.js",
     "scripts": {

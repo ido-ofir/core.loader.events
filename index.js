@@ -2,14 +2,15 @@
 
 module.exports = {
     name: 'core.loader.events',
-    hooks: [{
-        channel: 'core.plugin',
-        hook(plugin, pluginDefinition, next){
+    dependencies: ['core.plugin.emitter'],
+    init(def, done){
+        var core = this;
+        core.tap('core.plugin', function(plugin, pluginDefinition, next){
             if(pluginDefinition.events){
-                var core = this;
                 core.Emitter(plugin);
             }
             next();
-        }
-    }]
+        });
+        done();
+    }
 };
